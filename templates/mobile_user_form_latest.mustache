@@ -65,8 +65,7 @@
     <ion-radio-group [(ngModel)]="status" name="status">
         <%#statuses%>
         <ion-item class="ion-text-wrap">
-            <ion-label><% description %></ion-label>
-            <ion-radio slot="end" value="<% stid %>"></ion-radio>
+            <ion-radio value="<% stid %>"><% description %></ion-radio>
         </ion-item>
         <%/statuses%>
     </ion-radio-group>
