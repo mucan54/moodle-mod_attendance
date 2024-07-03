@@ -272,7 +272,7 @@ class mobile {
         require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 
         $args = (object) $args;
-        $versionname = $args->appversioncode >= 3950 ? 'latest' : 'ionic3';
+        $versionname = $args->appversioncode >= 44000 ? 'latest' : 'ionic5';
         $cmid = $args->cmid;
         $courseid = $args->courseid;
         $sessid = $args->sessid;
@@ -374,7 +374,7 @@ class mobile {
         require_once($CFG->dirroot.'/mod/attendance/locallib.php');
 
         $args = (object) $args;
-        $versionname = $args->appversioncode >= 3950 ? 'latest' : 'ionic3';
+        $versionname = $args->appversioncode >= 44000 ? 'latest' : 'ionic5';
         $cmid = $args->cmid;
         $courseid = $args->courseid;
         $sessid = $args->sessid;
