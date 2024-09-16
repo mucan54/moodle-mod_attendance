@@ -1740,7 +1740,7 @@ class renderer extends plugin_renderer_base {
         }
 
         $row = new html_table_row();
-        if ($maxpoints !== 0) {
+        if (!empty($maxpoints)) {
             $pctodate = format_float( $points * 100 / $maxpoints);
             $pointsinfo  = get_string('points', 'attendance') . ": " . $points . "/" . $maxpoints;
             $pointsinfo .= " (" . $pctodate . "%)";
@@ -1827,7 +1827,7 @@ class renderer extends plugin_renderer_base {
                     $row->cells[] = $cell;
                     $points = $stats['course'][$sess->courseid]['points'];
                     $maxpoints = $stats['course'][$sess->courseid]['maxpointstodate'];
-                    if ($maxpoints !== 0) {
+                    if (!empty($maxpoints)) {
                         $pctodate = format_float( $points * 100 / $maxpoints);
                         $summary  = get_string('points', 'attendance') . ": " . $points . "/" . $maxpoints;
                         $summary .= " (" . $pctodate . "%)";
